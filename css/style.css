@@ -1,0 +1,166 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+@font-face {
+    font-family:"fuente";
+    src: url("/fonts/Oswald/Oswald-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family:"fuente2";
+    src: url("/fonts/Open_Sans/OpenSans-Bold.ttf");
+}
+a{
+    text-decoration: none;
+}
+/*----------------------Header---------------------------*/
+.pagina_inicio{
+    background: url("/img/tokyo-japon-278.jpg");
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transition: 1s ease-in 0s;
+}
+.contenedor_header{
+    height: 100%;
+    background-color: rgba(2, 0, 4, 0);
+    color: rgba(255, 255, 255, 0.7);
+    display: grid;
+    grid-template-rows: 3fr 10fr 1fr 2fr;
+    font-size: 1.5em;
+    transition: 1s ease-in-out 0s;
+}
+@media (min-width:768px) {
+    .pagina_inicio{
+        height: 30vh;
+    }
+    .contenedor_header{
+        
+        margin: 0 auto;
+        grid-template-rows: 3fr 1fr 1fr;
+        background-color: rgba(2, 0, 4, 0.7);
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: 'fuente';
+    text-transform: uppercase;
+}
+@media (min-width:768px) {
+    .h1{
+        font-size: 5vmax;
+    }
+}
+.p_inicio{
+    display: inline;
+    margin: 0rem 0.5rem;
+    font-family: 'fuente2';
+}
+.fecha{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+.icono2{
+    font-family: 'fuente';
+}
+.redes a{
+    display: block;
+    height: 0rem;
+    margin-right: 2rem;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.icon{
+    color: rgba(255, 217, 0, 0.802);
+}
+.slogan{
+    text-align: center;
+    font-family: 'fuente2';
+}
+@media (min-width:768px) {
+    .slogan{
+        display: none;
+    }
+}
+
+/*----------------------menu-------------------------*/
+.section1{
+    width: 100%;
+    position:sticky;
+    top: 0;
+}
+.contenedor_menu{
+    height: 10vh;
+    overflow: hidden;
+    transition: 1s ease-in-out 0s;
+   
+}
+.menu_abierto{
+    height: 46vh;
+}
+.titulo_menu{
+    background-color: rgb(22, 22, 22);
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.titulo_nav{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'fuente';
+    color: rgba(255, 255, 255, 0.7);
+}
+.titulo_nav::before{
+    content: '';
+    height: 0.9em;
+    width: 0.2em;
+    background-color: darkgoldenrod;
+    display: inline-block;
+    margin-right: 1rem;
+}
+.nav{
+    background-color: rgb(38, 26, 0);
+}
+.nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+    color: white;
+    font-family: 'fuente2';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/*---------------------------------------------*/
+.section2{
+    width: 100%;
+    height: 350vh;
+    background-color: aquamarine;
+}
+
+
+
+
